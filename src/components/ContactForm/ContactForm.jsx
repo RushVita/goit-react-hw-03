@@ -10,7 +10,7 @@ export default function ContactForm({ onAdd }) {
   };
   const Schema = Yup.object().shape({
     name: Yup.string().min(3, "Too Short!").max(50, "Too Long!").required("Required"),
-    phone: Yup.string().min(6, "Too Short!").max(10, "Мaximum 10 digits").required("Required"),
+    phone: Yup.string().min(6, "Wrong phone number!").max(10, "Мaximum 10 digits").required("Required"),
   });
   return (
     <div className={css.wrap}>
