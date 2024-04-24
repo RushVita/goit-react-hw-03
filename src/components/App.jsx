@@ -39,9 +39,9 @@ function App() {
     item.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
   );
 
-  const deleteContact = (userName) => {
+  const deleteContact = (id) => {
     setContacts((prevContacts) => {
-      return prevContacts.filter((item) => item.name !== userName);
+      return prevContacts.filter((item) => item.id !== id);
     });
   };
 

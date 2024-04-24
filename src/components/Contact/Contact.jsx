@@ -13,7 +13,7 @@ export default function Contact({ contact, onDelete }) {
           <MdLocalPhone />
           {contact.number}
         </p>
-        <button className={css.btn} onClick={()=>onDelete(contact.name)}>Delete</button>
+        <button className={css.btn} onClick={()=>onDelete(contact.id)}>Delete</button>
       </li>
     </>
   );
