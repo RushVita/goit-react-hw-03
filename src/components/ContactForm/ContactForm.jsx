@@ -26,13 +26,13 @@ export default function ContactForm({ onAdd }) {
           <label htmlFor="name" className={css.lab}>
             Name
           </label>
-          <ErrorMessage name="name" />
+          <span className={css.error}><ErrorMessage  name="name" /></span>
           <Field id="name" className={css.input} name="name" />
 
           <label htmlFor="number" className={css.lab}>
             Phone
           </label>
-          <ErrorMessage name="phone" />
+          <span className={css.error}><ErrorMessage  name="phone" /></span>
 
           <Field id="number" className={css.input} name="phone" />
           <button className={css.btn} type="submit">
